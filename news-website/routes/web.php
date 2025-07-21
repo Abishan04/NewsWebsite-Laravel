@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 
 Route::get('/sdfd454', [UserController::class, 'index'])->name('home');
-Route::get('/about', [UserController::class, 'about'])->name('about');
+Route::get('/about/{name?}', [UserController::class, 'about'])->name('about');
 Route::get('/ftgydff', [UserController::class, 'register'])->name('register');
 Route::get('/jhhfdh', [UserController::class, 'blog'])->name('blog');
 Route::get('/dsfsdfs', [UserController::class, 'blogDetails'])->name('blog_details');

@@ -15,7 +15,7 @@
     @include('partials.header')
     <h1 id="title" class="text-center">
         @if(isset($name))
-            Welcome <span class="text-primary">{{ $name }}</span>
+            Welcome <span class="text-primary font-weight-bold">{{ $name }}</span>
         @else
             Welcome to Yarlit
         @endif

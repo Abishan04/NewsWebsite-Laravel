@@ -9,9 +9,8 @@ class UserController extends Controller
     {
         return view('pages.home');
     }
-    public function about()
+    public function about(string $name)
     {
-        $name = 'Abishan';
         return view('pages.about',['name' => $name] );
     }
 
