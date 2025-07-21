@@ -3,14 +3,14 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 
-Route::get('/', [UserController::class, 'index']);
-Route::get('/about', [UserController::class, 'about']);
-Route::get('/register', [UserController::class, 'register']);
-Route::get('/blog', [UserController::class, 'blog']);
-Route::get('/blog_details', [UserController::class, 'blogDetails']);
-Route::get('/login', [UserController::class, 'login']);
-Route::get('/contact', [UserController::class, 'contact']);
-Route::get('/error', [UserController::class, 'error']);
+Route::get('/sdfd454', [UserController::class, 'index'])->name('home');
+Route::get('/about', [UserController::class, 'about'])->name('about');
+Route::get('/ftgydff', [UserController::class, 'register'])->name('register');
+Route::get('/jhhfdh', [UserController::class, 'blog'])->name('blog');
+Route::get('/dsfsdfs', [UserController::class, 'blogDetails'])->name('blog_details');
+Route::get('/sdfg4rgeg', [UserController::class, 'login'])->name('login');
+Route::get('/sfgfew34g', [UserController::class, 'contact'])->name('contact');
+Route::get('/sglfu4iismd', [UserController::class, 'error'])->name('error');
 
 // Route::get('/', function () {
 //     return view('pages.home');

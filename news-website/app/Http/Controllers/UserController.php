@@ -11,8 +11,10 @@ class UserController extends Controller
     }
     public function about()
     {
-        return view('pages.about');
+        $name = 'Abishan';
+        return view('pages.about',['name' => $name] );
     }
+
     public function register()
     {
         return view('pages.register');

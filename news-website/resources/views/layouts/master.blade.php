@@ -13,7 +13,14 @@
 
 <body>
     @include('partials.header')
-    <h1 id="title" class="text-center">Welcome to Yarlit</h1>
+    <h1 id="title" class="text-center">
+        @if(isset($name))
+            Welcome {{ $name }}
+        @else
+            Welcome to Yarlit
+        @endif
+    </h1>
+      
     @yield('content')
     @include('partials.footer')
 
