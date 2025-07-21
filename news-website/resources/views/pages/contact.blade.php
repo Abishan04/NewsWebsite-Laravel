@@ -1,5 +1,12 @@
 @extends('layouts.master')
 @section('title', 'Contact Us')
+@push('styles')
+<style>
+    #title {
+        color: #12f3a4ff;
+    }
+</style>
+@endpush
 @section('content')
     <!-- Breadcrumb  -->
     <section>
@@ -9,7 +16,7 @@
                     <!-- Breadcrumb -->
                     <ul class="breadcrumbs bg-light mb-4">
                         <li class="breadcrumbs__item">
-                            <a href="index.html" class="breadcrumbs__url">
+                            <a href="/" class="breadcrumbs__url">
                                 <i class="fa fa-home"></i> Home</a>
                         </li>
                         <li class="breadcrumbs__item">

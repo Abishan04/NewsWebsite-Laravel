@@ -1,11 +1,19 @@
 @extends('layouts.master')
 
 @section('title', '404 Not Found')
+@push('styles')
+<style>
+    #title {
+        color: #320d73ff;
+    }
+</style>
+@endpush
 
 @section('content')
 
     <!-- 404 start-->
     <section class="wrap__section">
+        
         <div class="container">
             <div class="row">
                 <div class="col-xl-6 col-sm-10 col-md-8 col-lg-7 m-auto text-center">

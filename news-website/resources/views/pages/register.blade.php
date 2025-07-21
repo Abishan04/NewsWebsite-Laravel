@@ -1,5 +1,13 @@
 @extends('layouts.master')
 @section('title', 'Register')
+@push('styles')
+<style>
+    #title {
+        color: #f47e00ff;
+    }
+</style>
+@endpush
+
 @section('content')
 
     <!-- register -->

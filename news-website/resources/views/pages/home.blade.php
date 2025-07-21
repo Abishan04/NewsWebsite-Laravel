@@ -1,5 +1,12 @@
 @extends('layouts.master')
 @section('title', 'Home Page')
+@push('styles')
+<style>
+    #title {
+        color: #f31212ff;
+    }
+</style>
+@endpush
 @section('content')
     <section class="bg-light">
         <div class="container">
@@ -10,7 +17,7 @@
                             <!-- Post Article -->
                             <div class="card__post card__post-list">
                                 <div class="image-sm">
-                                    <a href="./blog_details.html">
+                                    <a href="./blog_details">
                                         <img src="{{ asset('images/news1.jpg') }}" class="img-fluid" alt="">
                                     </a>
                                 </div>
@@ -35,7 +42,7 @@
                                         </div>
                                         <div class="card__post__title">
                                             <h6>
-                                                <a href="./blog_details.html">
+                                                <a href="./blog_details">
                                                     6 Best Tips for Building a Good Shipping Boat
                                                 </a>
                                             </h6>
@@ -48,7 +55,7 @@
                             <!-- Post Article -->
                             <div class="card__post card__post-list">
                                 <div class="image-sm">
-                                    <a href="./blog_details.html">
+                                    <a href="./blog_details">
                                         <img src="{{ asset('images/news2.jpg') }}" class="img-fluid" alt="">
                                     </a>
                                 </div>
@@ -73,7 +80,7 @@
                                         </div>
                                         <div class="card__post__title">
                                             <h6>
-                                                <a href="blog_details.html">
+                                                <a href="blog_details">
                                                     6 Best Tips for Building a Good Shipping Boat
                                                 </a>
                                             </h6>
@@ -87,7 +94,7 @@
                             <!-- Post Article -->
                             <div class="card__post card__post-list">
                                 <div class="image-sm">
-                                    <a href="blog_details.html">
+                                    <a href="blog_details">
                                         <img src="{{ asset('images/news3.jpg') }}" class="img-fluid" alt="">
                                     </a>
                                 </div>
@@ -111,7 +118,7 @@
                                         </div>
                                         <div class="card__post__title">
                                             <h6>
-                                                <a href="blog_details.html">
+                                                <a href="blog_details">
                                                     6 Best Tips for Building a Good Shipping Boat
                                                 </a>
                                             </h6>
@@ -124,7 +131,7 @@
                             <!-- Post Article -->
                             <div class="card__post card__post-list">
                                 <div class="image-sm">
-                                    <a href="blog_details.html">
+                                    <a href="blog_details">
                                         <img src="{{ asset('images/news4.jpg') }}" class="img-fluid" alt="">
                                     </a>
                                 </div>
@@ -148,7 +155,7 @@
                                         </div>
                                         <div class="card__post__title">
                                             <h6>
-                                                <a href="blog_details.html">
+                                                <a href="blog_details">
                                                     6 Best Tips for Building a Good Shipping Boat
                                                 </a>
                                             </h6>
@@ -161,7 +168,7 @@
                             <!-- Post Article -->
                             <div class="card__post card__post-list">
                                 <div class="image-sm">
-                                    <a href="blog_details.html">
+                                    <a href="blog_details">
                                         <img src="{{ asset('images/news5.jpg') }}" class="img-fluid" alt="">
                                     </a>
                                 </div>
@@ -185,7 +192,7 @@
                                         </div>
                                         <div class="card__post__title">
                                             <h6>
-                                                <a href="blog_details.html">
+                                                <a href="blog_details">
                                                     6 Best Tips for Building a Good Shipping Boat
                                                 </a>
                                             </h6>
@@ -198,7 +205,7 @@
                             <!-- Post Article -->
                             <div class="card__post card__post-list">
                                 <div class="image-sm">
-                                    <a href="blog_details.html">
+                                    <a href="blog_details">
                                         <img src="{{ asset('images/news6.jpg') }}" class="img-fluid" alt="">
                                     </a>
                                 </div>
@@ -221,7 +228,7 @@
                                         </div>
                                         <div class="card__post__title">
                                             <h6>
-                                                <a href="blog_details.html">
+                                                <a href="blog_details">
                                                     6 Best Tips for Building a Good Shipping Boat
                                                 </a>
                                             </h6>
@@ -249,7 +256,7 @@
                                 <!-- Post Article -->
                                 <div class="card__post">
                                     <div class="card__post__body">
-                                        <a href="blog_details.html">
+                                        <a href="blog_details">
                                             <img src="{{ asset('images/newsimage1.png') }}" class="img-fluid" alt="">
                                         </a>
                                         <div class="card__post__content bg__post-cover">
@@ -288,7 +295,7 @@
                                 <!-- Post Article -->
                                 <div class="card__post">
                                     <div class="card__post__body">
-                                        <a href="blog_details.html">
+                                        <a href="blog_details">
                                             <img src="{{ asset('images/newsimage2.png') }}" class="img-fluid" alt="">
                                         </a>
                                         <div class="card__post__content bg__post-cover">
@@ -328,7 +335,7 @@
                             <!-- Post Article -->
                             <div class="card__post ">
                                 <div class="card__post__body card__post__transition">
-                                    <a href="blog_details.html">
+                                    <a href="blog_details">
                                         <img src="{{ asset('images/newsimage3.png') }}" class="img-fluid" alt="">
                                     </a>
                                     <div class="card__post__content bg__post-cover">
@@ -337,7 +344,7 @@
                                         </div>
                                         <div class="card__post__title">
                                             <h5>
-                                                <a href="blog_details.html">
+                                                <a href="blog_details">
                                                     Barack Obama and Family Visit borobudur temple enjoy holiday
                                                     indonesia.</a>
                                             </h5>
@@ -345,7 +352,7 @@
                                         <div class="card__post__author-info">
                                             <ul class="list-inline">
                                                 <li class="list-inline-item">
-                                                    <a href="blog_details.html">
+                                                    <a href="blog_details">
                                                         by david hall
                                                     </a>
                                                 </li>
@@ -363,7 +370,7 @@
                             <!-- Post Article -->
                             <div class="card__post ">
                                 <div class="card__post__body card__post__transition">
-                                    <a href="blog_details.html">
+                                    <a href="blog_details">
                                         <img src="{{ asset('images/newsimage4.png') }}" class="img-fluid" alt="">
                                     </a>
                                     <div class="card__post__content bg__post-cover">
@@ -372,7 +379,7 @@
                                         </div>
                                         <div class="card__post__title">
                                             <h5>
-                                                <a href="blog_details.html">
+                                                <a href="blog_details">
                                                     Barack Obama and Family Visit borobudur temple enjoy holiday
                                                     indonesia.</a>
                                             </h5>
@@ -380,7 +387,7 @@
                                         <div class="card__post__author-info">
                                             <ul class="list-inline">
                                                 <li class="list-inline-item">
-                                                    <a href="blog_details.html">
+                                                    <a href="blog_details">
                                                         by david hall
                                                     </a>
                                                 </li>
@@ -571,7 +578,9 @@
             <div class="row">
                 <div class="col-12">
                     <div class="large_add_banner_img">
-                        <img src="{{ asset('images/placeholder_large.jpg') }}" alt="adds">
+                        <a href="#">
+                            <img src="{{ asset('images/newsimage9.png') }}" alt="" class="img-fluid">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -592,7 +601,7 @@
                                 <!-- Post Article -->
                                 <div class="card__post ">
                                     <div class="card__post__body card__post__transition">
-                                        <a href="blog_details.html">
+                                        <a href="blog_details">
                                             <img src="{{ asset('images/newsimage8.png') }}" class="img-fluid" alt="">
                                         </a>
                                         <div class="card__post__content bg__post-cover">
@@ -601,7 +610,7 @@
                                             </div>
                                             <div class="card__post__title">
                                                 <h5>
-                                                    <a href="blog_details.html">
+                                                    <a href="blog_details">
                                                         Barack Obama and Family Visit borobudur temple enjoy holiday
                                                         indonesia.</a>
                                                 </h5>
@@ -609,11 +618,11 @@
                                             <div class="card__post__author-info">
                                                 <ul class="list-inline">
                                                     <li class="list-inline-item">
-                                                        <a href="blog_details.html">
+                                                        <a href="blog_details>
                                                             by david hall
                                                         </a>
                                                     </li>
-                                                    <li class="list-inline-item">
+                                                    <li class= "list-inline-item" >
                                                         <span>
                                                             Descember 09, 2016
                                                         </span>
@@ -629,7 +638,7 @@
                                 <!-- Post Article -->
                                 <div class="card__post ">
                                     <div class="card__post__body card__post__transition">
-                                        <a href="blog_details.html">
+                                        <a href="blog_details">
                                             <img src="{{ asset('images/newsimage9.png') }}" class="img-fluid" alt="">
                                         </a>
                                         <div class="card__post__content bg__post-cover">
@@ -638,7 +647,7 @@
                                             </div>
                                             <div class="card__post__title">
                                                 <h5>
-                                                    <a href="blog_details.html">
+                                                    <a href="blog_details">
                                                         Barack Obama and Family Visit borobudur temple enjoy holiday
                                                         indonesia.</a>
                                                 </h5>
@@ -646,7 +655,7 @@
                                             <div class="card__post__author-info">
                                                 <ul class="list-inline">
                                                     <li class="list-inline-item">
-                                                        <a href="blog_details.html">
+                                                        <a href="blog_details">
                                                             by david hall
                                                         </a>
                                                     </li>
@@ -670,7 +679,7 @@
                                         <!-- Post Article -->
                                         <div class="card__post card__post-list">
                                             <div class="image-sm">
-                                                <a href="blog_details.html">
+                                                <a href="blog_details">
                                                     <img src="{{ asset('images/news1.jpg') }}" class="img-fluid" alt="">
                                                 </a>
                                             </div>
@@ -696,7 +705,7 @@
                                                     </div>
                                                     <div class="card__post__title">
                                                         <h6>
-                                                            <a href="blog_details.html">
+                                                            <a href="blog_details">
                                                                 6 Best Tips for Building a Good Shipping Boat
                                                             </a>
                                                         </h6>
@@ -709,7 +718,7 @@
                                         <!-- Post Article -->
                                         <div class="card__post card__post-list">
                                             <div class="image-sm">
-                                                <a href="blog_details.html">
+                                                <a href="blog_details">
                                                     <img src="{{ asset('images/news2.jpg') }}" class="img-fluid" alt="">
                                                 </a>
                                             </div>
@@ -734,7 +743,7 @@
                                                     </div>
                                                     <div class="card__post__title">
                                                         <h6>
-                                                            <a href="blog_details.html">
+                                                            <a href="blog_details">
                                                                 6 Best Tips for Building a Good Shipping Boat
                                                             </a>
                                                         </h6>
@@ -751,7 +760,7 @@
                                         <!-- Post Article -->
                                         <div class="card__post card__post-list">
                                             <div class="image-sm">
-                                                <a href="blog_details.html">
+                                                <a href="blog_details">
                                                     <img src="{{ asset('images/news3.jpg') }}" class="img-fluid" alt="">
                                                 </a>
                                             </div>
@@ -776,7 +785,7 @@
                                                     </div>
                                                     <div class="card__post__title">
                                                         <h6>
-                                                            <a href="blog_details.html">
+                                                            <a href="blog_details">
                                                                 6 Best Tips for Building a Good Shipping Boat
                                                             </a>
                                                         </h6>
@@ -789,7 +798,7 @@
                                         <!-- Post Article -->
                                         <div class="card__post card__post-list">
                                             <div class="image-sm">
-                                                <a href="blog_details.html">
+                                                <a href="blog_details">
                                                     <img src="{{ asset('images/news4.jpg') }}" class="img-fluid" alt="">
                                                 </a>
                                             </div>
@@ -815,7 +824,7 @@
                                                     </div>
                                                     <div class="card__post__title">
                                                         <h6>
-                                                            <a href="blog_details.html">
+                                                            <a href="blog_details">
                                                                 6 Best Tips for Building a Good Shipping Boat
                                                             </a>
                                                         </h6>
@@ -1562,7 +1571,7 @@
                                         <!-- Post Article -->
                                         <div class="card__post card__post-list">
                                             <div class="image-sm">
-                                                <a href="blog_details.html">
+                                                <a href="blog_details">
                                                     <img src="{{ asset('images/news1.jpg') }}" class="img-fluid" alt="">
                                                 </a>
                                             </div>
@@ -1586,7 +1595,7 @@
                                                     </div>
                                                     <div class="card__post__title">
                                                         <h6>
-                                                            <a href="blog_details.html">
+                                                            <a href="blog_details">
                                                                 6 Best Tips for Building a Good Shipping Boat
                                                             </a>
                                                         </h6>
@@ -1599,7 +1608,7 @@
                                         <!-- Post Article -->
                                         <div class="card__post card__post-list">
                                             <div class="image-sm">
-                                                <a href="blog_details.html">
+                                                <a href="blog_details">
                                                     <img src="{{ asset('images/news2.jpg') }}" class="img-fluid" alt="">
                                                 </a>
                                             </div>
@@ -1624,7 +1633,7 @@
                                                     </div>
                                                     <div class="card__post__title">
                                                         <h6>
-                                                            <a href="blog_details.html">
+                                                            <a href="blog_details">
                                                                 6 Best Tips for Building a Good Shipping Boat
                                                             </a>
                                                         </h6>

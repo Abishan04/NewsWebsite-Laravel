@@ -1,5 +1,12 @@
 @extends('layouts.master')
 @section('title', 'Blog Details')
+@push('styles')
+<style>
+    #title {
+        color: #c238a4ff;
+    }
+</style>
+@endpush
 @section('content')
 
     <section class="pb-80">
@@ -10,7 +17,7 @@
                     <!-- Breadcrumb -->
                     <ul class="breadcrumbs bg-light mb-4">
                         <li class="breadcrumbs__item">
-                            <a href="index.html" class="breadcrumbs__url">
+                            <a href="/" class="breadcrumbs__url">
                                 <i class="fa fa-home"></i> Home</a>
                         </li>
                         <li class="breadcrumbs__item">
@@ -651,7 +658,7 @@
                                     <!-- Post Article -->
                                     <div class="card__post card__post-list">
                                         <div class="image-sm">
-                                            <a href="./blog_details.html">
+                                            <a href="/blog_details">
                                                 <img src="{{ asset('images/newsimage1.png') }}" class="img-fluid" alt="">
                                             </a>
                                         </div>
@@ -677,7 +684,7 @@
                                                 </div>
                                                 <div class="card__post__title">
                                                     <h6>
-                                                        <a href="./blog_details.html">
+                                                        <a href="/blog_details">
                                                             6 Best Tips for Building a Good Shipping Boat
                                                         </a>
                                                     </h6>
@@ -690,7 +697,7 @@
                                     <!-- Post Article -->
                                     <div class="card__post card__post-list">
                                         <div class="image-sm">
-                                            <a href="./blog_details.html">
+                                            <a href="/blog_details">
                                                 <img src="{{ asset('images/newsimage1.png') }}" class="img-fluid" alt="">
                                             </a>
                                         </div>
@@ -715,7 +722,7 @@
                                                 </div>
                                                 <div class="card__post__title">
                                                     <h6>
-                                                        <a href="./blog_details.html">
+                                                        <a href="/blog_details">
                                                             6 Best Tips for Building a Good Shipping Boat
                                                         </a>
                                                     </h6>
@@ -728,7 +735,7 @@
                                     <!-- Post Article -->
                                     <div class="card__post card__post-list">
                                         <div class="image-sm">
-                                            <a href="./blog_details.html">
+                                            <a href="/blog_details">
                                                 <img src="{{ asset('images/news5.jpg') }}" class="img-fluid" alt="">
                                             </a>
                                         </div>
@@ -754,7 +761,7 @@
                                                 </div>
                                                 <div class="card__post__title">
                                                     <h6>
-                                                        <a href="./blog_details.html">
+                                                        <a href="/blog_details">
                                                             6 Best Tips for Building a Good Shipping Boat
                                                         </a>
                                                     </h6>

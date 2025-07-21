@@ -1,6 +1,13 @@
 @extends('layouts.master')
 
 @section('title', 'Login')
+@push('styles')
+<style>
+    #title {
+        color: #1bded7ff;
+    }
+</style>
+@endpush
 
 @section('content')
 

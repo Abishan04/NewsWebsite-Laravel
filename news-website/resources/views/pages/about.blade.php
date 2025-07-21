@@ -1,7 +1,14 @@
 @extends('layouts.master')
 @section('title', 'About Us')
+@push('styles')
+<style>
+    #title {
+        color: #f39c12;
+    }
+</style>
+@endpush
 @section('content')
-  
+@stack('header')
     <section>
         <div class="container">
             <div class="row">
@@ -10,7 +17,7 @@
                     <!-- Breadcrumb -->
                     <ul class="breadcrumbs bg-light mb-4">
                         <li class="breadcrumbs__item">
-                            <a href="index.html" class="breadcrumbs__url">
+                            <a href="/" class="breadcrumbs__url">
                                 <i class="fa fa-home"></i> Home</a>
                         </li>
                         <li class="breadcrumbs__item">
@@ -173,12 +180,4 @@
             </div>
         </div>
     </section>
-
-
-
-
-    <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
-    @endsection
-    @section('scripts')
-        <script type="text/javascript" src="{{ asset('js/index.bundle.js') }}"></script>
     @endsection
