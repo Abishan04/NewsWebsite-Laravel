@@ -65,7 +65,7 @@
                                 <a class="nav-link active" href="{{ route('home') }}">home</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link" href="{{ route('about',['name' => 'J']) }}"> about </a>
+                              <a class="nav-link" href="{{ route('about') }}">About</a>
                             </li>
                             <li class="nav-item dropdown has-megamenu">
                                 <a class="nav-link" href="{{ route('blog') }}">blog </a>
