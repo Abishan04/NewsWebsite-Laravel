@@ -6,20 +6,14 @@
     <title>@yield('title')</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
     @stack('styles')
 </head>
 
 <body>
     @include('partials.header')
-    <h1 id="title" class="text-center">
-        @if(isset($name))
-            Welcome <span class="text-primary font-weight-bold">{{ $name }}</span>
-        @else
-            Welcome to Yarlit
-        @endif
-    </h1>
+    
       
     @yield('content')
     @include('partials.footer')

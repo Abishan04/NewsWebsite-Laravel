@@ -1,9 +1,13 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\StudentController;
 use App\Http\Controllers\UserController;
 
-Route::get('/sdfd454/{name?}', [UserController::class, 'index'])->name('home');
+Route::resource('student', StudentController::class);
+
+
+Route::get('/sample', [UserController::class, 'sample'])->name('sample');
+Route::get('///{name?}', [UserController::class, 'index'])->name('home');
 Route::get('/about/{name?}', [UserController::class, 'about'])->name('about');
 Route::get('/ftgydff/{name?}', [UserController::class, 'register'])->name('register');
 Route::get('/jhhfdh/{name?}', [UserController::class, 'blog'])->name('blog');

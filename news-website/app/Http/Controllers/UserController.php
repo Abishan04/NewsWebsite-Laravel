@@ -4,6 +4,10 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
+    public function sample()
+    {
+        return view('pages.sample');
+    }
     public function index()
     {
         return view('pages.home');
