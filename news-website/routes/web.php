@@ -1,9 +1,13 @@
 <?php
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StudentController;
+use App\Http\Controllers\GradeController;
+use App\Http\Controllers\SubjectController;
 use App\Http\Controllers\UserController;
 
-Route::resource('student', StudentController::class);
+Route::resource('students', StudentController::class);
+Route::resource('grades', GradeController::class);
+Route::resource('subjects', SubjectController::class);
 
 
 Route::get('/sample', [UserController::class, 'sample'])->name('sample');

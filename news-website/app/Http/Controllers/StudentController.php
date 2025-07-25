@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Student;
 use Illuminate\Http\Request;
 
 class StudentController extends Controller
@@ -11,7 +11,8 @@ class StudentController extends Controller
      */
     public function index()
     {
-        return view('student.index');
+        $students =Student::all();
+        return view('students.index', compact('students'));
     }
 
     /**
@@ -19,7 +20,7 @@ class StudentController extends Controller
      */
     public function create()
     {
-        return view('student.create');
+        return view('students.create');
     }
 
     /**
@@ -27,7 +28,17 @@ class StudentController extends Controller
      */
     public function store(Request $request)
     {
-        return dd($request->all());
+       $student=new Student();
+       $student->admission_no=$request->admission_no;
+       $student->first_name=$request->first_name;
+       $student->last_name=$request->last_name;
+       $student->gender=$request->gender;
+       $student->telephone_no=$request->telephone_no;
+       $student->nic_no=$request->nic_no;
+       $student->date_of_birth=$request->date_of_birth;
+       $student->address=$request->address;
+       $student->save();
+       return redirect()->route('students.index');
     }
 
     /**
@@ -35,7 +46,9 @@ class StudentController extends Controller
      */
     public function show(string $id)
     {
-        return view('student.show');
+     
+        $student=Student::find($id);
+        return view('students.show', compact('student'));
     }
 
     /**
@@ -43,7 +56,8 @@ class StudentController extends Controller
      */
     public function edit(string $id)
     {
-        return view('student.edit');
+        $student=Student::find($id);
+        return view('students.edit', compact('student'));
     }
 
     /**
@@ -51,7 +65,17 @@ class StudentController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        return "Id : ".$id . " got updated";
+        $student=Student::find($id);
+        $student->admission_no=$request->admission_no;
+        $student->first_name=$request->first_name;
+        $student->last_name=$request->last_name;
+        $student->gender=$request->gender;
+        $student->telephone_no=$request->telephone_no;
+        $student->nic_no=$request->nic_no;
+        $student->date_of_birth=$request->date_of_birth;
+        $student->address=$request->address;
+        $student->save();
+        return redirect()->route('students.index');
         
     }
 
@@ -60,6 +84,8 @@ class StudentController extends Controller
      */
     public function destroy(string $id)
     {
-        return "Id : ".$id . " got deleted";
+        $student=Student::find($id);
+        $student->delete();
+        return redirect()->route('students.index');
     }
 }
