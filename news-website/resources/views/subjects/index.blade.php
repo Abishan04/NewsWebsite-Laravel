@@ -48,10 +48,9 @@
 
                     </div>
                 </div>
-                 <div style="display: flex; justify-content: center;">
-                 <a href="/subjects/create" class="btn btn-block btn-info mt-3 mx-auto text-center text-white">Create</a>
-                </div>
-            </div>
+                  {{-- <div class="d-flex justify-content-center">
+  <a href="/subjects/create" class="btn btn-info mt-3 text-white btn-block">Create</a>
+</div> --}}
         </div>
     </div>
 </section>
