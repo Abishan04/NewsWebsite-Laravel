@@ -10,22 +10,25 @@
                         <h4 class="card-title text-center text-white mb-4">Show Grades List</h4>
 
                         <div class="table-responsive text-nowrap">
-                            <table class="table table-bordered table-striped table-hover text-center mb-0 ">
-                                <thead class="table-primary">
-                                    <tr>
-                                        <th scope="col">Id</th>
-                                        <th scope="col">Grade Name</th>
-                                        <th scope="col">Grade Color</th>
-                                        <th scope="col">Grade Order</th>
-                                    </tr>
-                                </thead>
+                            <table class="table table-bordered table-dark table-hover text-center mb-0 ">
                                 <tbody>
                                     <tr>
+                                        <th scope="col">Id</th>
                                         <td>{{ $grade->id }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">Grade Name</th>
                                         <td>{{ $grade->grade_name }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">Grade Color</th>
                                         <td>{{ $grade->grade_color }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">Grade Order</th>
                                         <td>{{ $grade->grade_order }}</td>
                                     </tr>
+                                   
                                 </tbody>
                             </table>
                         </div>

@@ -81,6 +81,14 @@
                                     <li><a class="dropdown-item" href="/grades"> Grades </a>
                                 </ul>
                             </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Create </a>
+                                <ul class="dropdown-menu animate fade-up">
+                                    <li><a class="dropdown-item" href="/students/create"> Students </a>
+                                    <li><a class="dropdown-item" href="/subjects/create"> Subjects </a>
+                                    <li><a class="dropdown-item" href="/grades/create"> Grades </a>
+                                </ul>
+                            </li>
                             <li class="nav-item"><a class="nav-link" href="{{ route('contact') }}"> contact </a></li>
                         </ul>
 
