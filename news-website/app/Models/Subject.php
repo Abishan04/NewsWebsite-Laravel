@@ -6,5 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Subject extends Model
 {
-    //
+    public function students(){
+        return $this->belongsToMany(Student::class);
+    }
+    public function grade(){
+        return $this->belongsToMany(Grade::class);
+    }
 }

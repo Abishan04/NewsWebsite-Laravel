@@ -15,21 +15,26 @@
                             <table class="table table-bordered table-dark text-white table-hover text-center mb-0">
                                 <tbody>
                                     <tr>
-                                        <th scope="col">Id</th>
-                                        <td>{{ $subject->id }}</td>
+                                        <thead class="table-light">
+                                        <th scope="col">ID</th>
+                                        <th scope="col">Grade ID</th>
+                                        <th scope="col">Admission No</th>
+                                        <th scope="col">First Name</th>
+                                        <th scope="col">Last Name</th>
+                                        <th scope="col">Admission No</th>
+                                        </thead>
                                     </tr>
-                                    <tr>
-                                        <th scope="col">Subject Name</th>
-                                        <td>{{ $subject->subject_name }}</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="col">Subject Index</th>
-                                        <td>{{ $subject->subject_index }}</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="col">Subject Order</th>
-                                        <td>{{ $subject->subject_order }}</td>
-                                    </tr>                                 
+                                       @foreach ($subject as $student)
+                                       <tr>
+                                           <td>{{ $student->id }}</td>
+                                           <td>{{ $student->grade_id }}</td>
+                                           <td>{{ $student->admission_no }}</td>
+                                           <td>{{ $student->first_name }}</td>
+                                           <td>{{ $student->last_name }}</td>
+                                             <td>{{ $student->admission_no }}</td>
+
+                                       </tr>
+                                       @endforeach
                                 </tbody>
                             </table>
                         </div>

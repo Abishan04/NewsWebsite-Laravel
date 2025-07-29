@@ -37,6 +37,14 @@
                                     <label class="form-check-label" for="female">Female</label>
                                 </div>
                             </div>
+                            <div class="mb-3">
+                                <select name="grade_id" id="grade_id" class="form-select">
+                                    <option value="">Select Grade</option>
+                                    @foreach($grades as $grade)
+                                        <option value="{{ $grade->id }}">{{ $grade->grade_name }}</option>
+                                    @endforeach
+                                </select>
+                            </div>
 
                             <div class="form-floating mb-3">
                                 <input type="text" class="form-control" name="telephone_no" id="telephone_no" placeholder="Enter student telephone no">

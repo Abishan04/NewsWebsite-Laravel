@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\Grade;
 
-
 use Illuminate\Http\Request;
 
 class GradeController extends Controller
@@ -43,11 +42,12 @@ class GradeController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
-    {
-        $grade=Grade::find($id);
-        return view('grades.show', compact('grade'));
-    }
+public function show(string $id) {
+    $grade = Grade::find($id);
+    $student = Grade::find($id)->students;
+    $subject = Grade::find($id)->subjects;
+    return view('grades.show', compact('student', 'grade', 'subject'));
+}
 
     /**
      * Show the form for editing the specified resource.

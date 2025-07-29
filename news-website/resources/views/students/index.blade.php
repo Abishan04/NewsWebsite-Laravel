@@ -13,10 +13,11 @@
 
                         <div class="table-responsive text-nowrap">
                             <table class="table table-bordered bg-dark text-white  text-center mb-0">
-                                <thead class="">
+                                <thead class="table-light">
                                     <tr>
                                         <th scope="col">Id</th>
-                                        <th scope="col" >Admission No</th>
+                                        <th scope="col">Grade</th>
+                                         <th scope="col" >Admission No</th>
                                         <th scope="col">Firstname</th>
                                         <th scope="col">Lastname</th>
                                         <th scope="col">Gender</th>
@@ -33,6 +34,7 @@
                                     @foreach ($students as $student)
                                         <tr>
                                             <td>{{ $student->id }}</td>
+                                            <td>{{ $student->grade->grade_name }}</td>
                                             <td>{{ $student->admission_no }}</td>
                                             <td>{{ $student->first_name }}</td>
                                             <td>{{ $student->last_name }}</td>
@@ -44,13 +46,13 @@
                                             <td>{{ $student->created_at }}</td>
                                             <td>{{ $student->updated_at }}</td>
 
-                                            <td><a href="/students/{{ $student->id }}" class="btn btn-outline-success btn-sm">Show</a></td>
-                                            <td><a href="/students/{{ $student->id }}/edit" class="btn btn-outline-primary btn-sm">Edit</a></td>
+                                            <td><a href="/students/{{ $student->id }}" class="btn btn-success btn-sm">Show</a></td>
+                                            <td><a href="/students/{{ $student->id }}/edit" class="btn btn-primary btn-sm">Edit</a></td>
                                             <td>
                                                 <form action="/students/{{ $student->id }}" method="post">
                                                     @csrf
                                                     @method('delete')
-                                                    <button type="submit" class="btn btn-outline-danger btn-sm">Delete</button>
+                                                    <button type="submit" class="btn btn-danger btn-sm">Delete</button>
                                                 </form>
                                             </td>
                                         </tr>       

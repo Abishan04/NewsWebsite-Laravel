@@ -40,6 +40,7 @@
                                     <label class="form-check-label" for="female">Female</label>
                                 </div>
                             </div>
+                            
                             <div class="form-group form-floating">
                                 <input class="form-control" name="telephone_no" id="telephone_no"
                                     placeholder="Enter student telephone no" type="text" value="{{ $student->telephone_no }}">
