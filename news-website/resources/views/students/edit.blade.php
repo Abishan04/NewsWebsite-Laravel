@@ -40,6 +40,14 @@
                                     <label class="form-check-label" for="female">Female</label>
                                 </div>
                             </div>
+                            <div class="form-group">
+                                <select name="grade_id" id="grade_id" class="form-select">
+                                    <option value="">Select Grade</option>
+                                    @foreach($grades as $grade)
+                                        <option value="{{ $grade->id }}" {{ $student->grade_id == $grade->id ? 'selected' : '' }}>{{ $grade->grade_name }}</option>
+                                    @endforeach
+                                </select>
+                            
                             
                             <div class="form-group form-floating">
                                 <input class="form-control" name="telephone_no" id="telephone_no"

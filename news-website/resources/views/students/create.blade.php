@@ -38,10 +38,18 @@
                                 </div>
                             </div>
                             <div class="mb-3">
-                                <select name="grade_id" id="grade_id" class="form-select">
-                                    <option value="">Select Grade</option>
+                                <label for="grade_id" class="form-label">Select Grade</label>
+                                <select name="grade_id" id="grade_id" class="form-select" required>
                                     @foreach($grades as $grade)
                                         <option value="{{ $grade->id }}">{{ $grade->grade_name }}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject_id" class="form-label">Select Subjects</label>
+                                <select name="subject_id[]" id="subject_id" class="form-select" multiple required>
+                                    @foreach($subjects as $subject)
+                                        <option value="{{ $subject->id }}">{{ $subject->subject_name }}</option>
                                     @endforeach
                                 </select>
                             </div>

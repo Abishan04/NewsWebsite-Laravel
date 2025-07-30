@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Student;
 use App\Models\Grade;
+use App\Models\Subject;
 use Illuminate\Http\Request;
 
 class StudentController extends Controller
@@ -23,27 +24,29 @@ class StudentController extends Controller
     public function create()
     {
         $grades=Grade::all();
-        return view('students.create', compact('grades'));
+        $subjects=Subject::all();
+        return view('students.create', compact('grades', 'subjects'));
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
-    {
-       $student=new Student();
-       $student->grade_id=$request->grade_id;
-       $student->admission_no=$request->admission_no;
-       $student->first_name=$request->first_name;
-       $student->last_name=$request->last_name;
-       $student->gender=$request->gender;
-       $student->telephone_no=$request->telephone_no;
-       $student->nic_no=$request->nic_no;
-       $student->date_of_birth=$request->date_of_birth;
-       $student->address=$request->address;
-       $student->save();
-       return redirect()->route('students.index');
-    }
+   public function store(Request $request)
+{
+    $student = new Student();
+    $student->grade_id = $request->grade_id;
+    $student->admission_no = $request->admission_no;
+    $student->first_name = $request->first_name;
+    $student->last_name = $request->last_name;
+    $student->gender = $request->gender;
+    $student->telephone_no = $request->telephone_no;
+    $student->nic_no = $request->nic_no;
+    $student->date_of_birth = $request->date_of_birth;
+    $student->address = $request->address;
+    $student->save();
+    $student->subjects()->attach($request->subject_id);
+    return redirect()->route('students.index');
+}
 
     /**
      * Display the specified resource.
